@@ -39,4 +39,34 @@ Git	Version control system
 
 Code Editor	VS Code or similar
 
+Technical Architecture
+
+Backend Architecture (Node.js + Express)
+
+●	Controllers: Handle business logic for authentication and CRUD
+
+●	Models: Mongoose schemas for User and Transaction
+
+●	Routes: API endpoints for auth and CRUD operations
+
+●	Middleware: JWT verification and request protection
+
+●	Configuration: Database connection and environment variables
+
+
+Database Architecture (MongoDB)
+
+●	Users Collection:
+
+ _id, name, email, password (hashed), createdAt
+ 
+●	Transactions Collection:
+
+ _id, userId (FK), title/description, amount/value, createdAt
+ 
+●	Relationship:
+
+ Many Transactions belong to One User
+
+
 
